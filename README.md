@@ -11,7 +11,7 @@ This command starts Keycloak exposed on the local port 8080 and creates an initi
 
 (Application name)Realm name: Springboot_SSO
 
-Client ID :LoginWithKeyCloak
+Client ID :Id
 username:user_admin
 password:admin
 
@@ -20,7 +20,7 @@ Generate the self-signed certificate and create a keystore:
 
 keytool -genkeypair -alias migrate -keyalg RSA -keysize 2048 -storetype PKCS12 -keystore migrate.p12 -validity 365 -ext SAN=DNS:localhost,IP:127.0.0.1
 
-Example: PS C:\Users\Khadeer\Desktop\demo\demo\src\main\resources\keystore> keytool -genkeypair -alias migrate -keyalg RSA -keysize 2048 -storetype PKCS12 -keystore migrate.p12 -validity 365 -ext SAN=DNS:localhost,IP:127.0.0.1
+Example: complete path to the file where you want to create it  keytool -genkeypair -alias migrate -keyalg RSA -keysize 2048 -storetype PKCS12 -keystore migrate.p12 -validity 365 -ext SAN=DNS:localhost,IP:127.0.0.1
 password:123465
 
 keytool -genkeypair -alias migrate -keyalg RSA -keysize 2048 -storetype PKCS12 -keystore migrate.p12 -validity 365 -ext SAN=DNS:localhost,IP:127.0.0.1,IP:212.227.185.126
